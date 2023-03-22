@@ -1,4 +1,5 @@
 
+alert("Bem vindo!");
 console.log('Meu... perdi as constas de quantos programas...');
 
 const nome = prompt('Qual é seu nome?');
@@ -35,7 +36,7 @@ console.log('valor do jantar R$' +
 
  const jantar = parseInt(prompt('valor do jantar'));
  const garcon = parseInt(jantar * 0.10);
- console.log(jantar * 0.10) //observe que vai dar um numero enorme desta forma 
+ console.log(jantar * 0.10); //observe que vai dar um numero enorme desta forma 
  alert('Valor do jantar R$'+ jantar + '\n Taxa garçon R$' + 
  garcon + '\nTotal R$'+ (jantar + garcon));
 
