@@ -15,7 +15,7 @@
      Hoje o php é: <strong>PHP: Hypertext Processor</strong><br>
      Para ver suar versoes visite o site
      <a href="https://museum.php.net/">Museu PHP.</a></p>
-  <p>PHP tambem é conhecida como Personal Hypertext Processor.</p>
+  <p>PHP é uma linguagem vagamente tipada.</p>
   <p>Arquivos PHP possuem extensão <strong>" .php"</strong></p>
   <p>Sintaxe basíco do PHP</p>
   <?php      ?>
@@ -177,6 +177,148 @@ echo(sqrt(16));  //  4
 Sintaxe<br>
 define(name, value, case-insensitive)
 </p>
+
+<p>operadores aritméticos<br>
+Operadores aritméticos<br>
+Operadores de atribuição<br>
+Operadores de comparação<br>
+Operadores de incremento/decremento<br>
+Operadores lógicos<br>
+Operadores de string<br>
+Operadores de matriz<br>
+Operadores de atribuição condicional
+</p>
+
+<p>possui operadores logicos muito parecidos com os de JavaScript,
+     e operadores de incremento e decremento.<br>
+    decremento.</p>
+    <?php
+    $x = 10;  
+    echo ++$x; // 11
+    ?>  
+
+    
+    <?php
+    $x = 10;  
+    echo $x++; // 10
+    ?>  
+
+    <?php
+    $x = 10;  
+    echo --$x; // 9
+    ?>  
+
+    <?php
+    $x = 10;  
+    echo $x --; // 10
+    ?>  
+
+    <p>if</p>
+    <?php
+$t = date("H");
+
+if ($t < "20") {
+  echo "tenha um bom dia";
+}
+?>
+
+<p>if else</p>
+<?php
+$t = date("H");
+
+if ($t < "20") {
+  echo "tenha um bom dia";
+} else {
+  echo "tenha uma boa noite";
+}
+?>
+
+<p>Tambem funciona com if else, else if, else</p>
+<p>Temos o switch, foor , while, do while e foreach.</p>
+
+<?php
+$x = 1;
+
+do {
+  echo "O numro é: $x <br>";
+  $x++;
+} while ($x <= 5);
+?>
+
+<?php
+for ($g = 0; $g <= 10; $g++) {
+  echo "O numero é: $g <br>";
+}
+?>
+
+<p>O foreachloop percorre um bloco de código para cada 
+    elemento em uma matriz.<br> Podemos usar o " break " 
+    para parar um loop.</p>
+
+foreach ($array as $value) {
+  code to be executed;
+}
+
+<?php
+$cor = array("red", "green", "blue", "yellow");
+
+foreach ($cor as $value) {
+  echo "$value <br>";
+}
+?>
+
+<p>funcao em php e bem similar com JavaScript</p>
+<?php
+function teste() {
+  echo "Olá";
+}
+
+teste(); 
+?>
+outro exemplo
+
+<?php
+function modelo($carro) {
+  echo "$carro veiculo.<br>";
+}
+
+modelo("Fusca");
+modelo("Uno");
+modelo("Brasilia");
+modelo("chevette");
+modelo("gol");
+?>
+
+<p>similar ao JavaScript o php retorna o valor. " return "</p>
+
+<p>Array em php. array()</p>
+<?php
+$carros = array("Volvo", "BMW", "Toyota");
+echo "I like " . $carros[0] . ", " . $carros[1] . " and " . $carros[2] . ".";
+?>
+
+<p>retornando o comprimento de um array. count()</p>
+
+<p>podemor percorrer a array. foreach()</p>
+<?php
+$idade = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+foreach($idade as $x => $x_value) {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+}
+?>
+
+<p>funções de classificação de array PHP:<br>
+
+sort()- ordenar  ordem crescente<br>
+rsort()- ordenar  ordem decrescente<br>
+asort()- classificar arrays associativos em ordem crescente, de acordo com o valor<br>
+ksort()- classificar arrays associativos em ordem crescente, de acordo com a chave<br>
+arsort()- classificar arrays associativos em ordem decrescente, de acordo com o valor<br>
+krsort()- classificar arrays associativos em ordem decrescente, de acordo com a chave<br>
+</p>
+
 <!-- continua em outro arquivo -->
 </body>
 </html>
