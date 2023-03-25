@@ -320,5 +320,8 @@ krsort()- classificar arrays associativos em ordem decrescente, de acordo com a 
 </p>
 
 <!-- continua em outro arquivo -->
+<?php
+include 'pratica.php'
+?>
 </body>
 </html>
