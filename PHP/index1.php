@@ -29,11 +29,18 @@ echo "The time is " . date("h:i:sa");
     e o horário especificado.</p>
 
 <p>vamos ver form</p>
-get envia pela url 
-o post envia por pacotes
+    get envia pela url 
+    post envia por pacotes
     
 <form method="get" action="dados.php"></form>
 
+PHP e JSON
+PHP tem algumas funções internas para lidar com JSON.
+
+Primeiro, veremos as duas funções a seguir:
+
+json_encode()
+json_decode()
 
 </body>
 </html>
